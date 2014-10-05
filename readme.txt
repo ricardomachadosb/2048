@@ -1,0 +1,1 @@
+2048 simples feito apenas com javascript puro, sem frameworks
