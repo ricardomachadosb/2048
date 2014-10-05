@@ -1,0 +1,19 @@
+if((secondInput.getAttribute("has-content") == "true") && value3 == parseInt(value2)){
+					atualizaField(thirdInput, value3 * 2);
+					cleanField(secondInput);
+					
+					if(firstInput.getAttribute("has-content") == "true"){
+						atualizaField(secondInput, secondInput.innerHTML);
+						cleanField(firstInput);
+					}
+				}else if(firstInput.getAttribute("has-content") == "true"){
+					if(secondInput.getAttribute("has-content") == "true"){
+						if(parseInt(value1) == parseInt(value2)){
+							atualizaField(secondInput, parseInt(value2) * 2);
+							cleanField(firstInput);
+						}
+					}else {
+						atualizaField(secondInput, firstInput.innerHTML);
+						cleanField(firstInput);
+					}
+				}
